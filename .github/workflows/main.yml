@@ -1,6 +1,8 @@
 name: Como usar variaveis de ambiente
 on:
   workflow_dispatch:
+env: #variavel que todos os job e action tem acesso
+  ENV_WORKFLOW: "Valor WORKFLOW"
 jobs:
   env: 
     runs-on: ubuntu-latest
